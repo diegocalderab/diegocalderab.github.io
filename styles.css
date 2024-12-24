@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    background-color: #eeebb0;
+}
+
+header{
+    display:flex;
+    padding: 2%;
+    border-bottom: 1px solid #eeebb0;
+    justify-content: center;
+    color: #ace96b;
+    background-image: url(fondoNavidad2.avif);
+    font-family: 'Snowburst One', cursive;
+}
+
+main{
+    color: #cf3434;
+    margin-top: 5%;
+    font-family: 'Cardo', serif;
+}
+
+.textoPrincipal{
+    text-align: center;
+    margin-left: 6.25%;
+    margin-right: 6.25%;
+}
+
+.textoQuevedo{
+    text-align: center;
+    justify-content: center;
+    margin-left: 6.25%;
+    margin-right: 6.25%;
+    font-size: 50px;
+}
+
+.textoAbu{
+    text-align: center;
+    margin-left: 6.25%;
+    margin-right: 6.25%;
+}
+
+.cuestionario{
+    margin-top: 10%;
+    margin-left: 25%;
+    text-align: center;
+    border-style:solid;
+    border-color: #40611d;
+    border-radius: 20px;
+    width: 50%;
+}
+
+img{
+    border-style:solid;
+    border-color: #40611d;
+    border-radius: 100%;
+    width: 20%;
+}
+
+#botonGanador{
+    text-align: center;
+    justify-content: center;
+}
+
+#boton1{
+    margin-top: 5%;
+}
+#boton2{
+    margin-top: 5%;
+}
+#boton3{
+    margin-top: 5%;
+}
+
+.btn {
+    background-color: #85c787a8;
+    color: #40611d;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 100%;
+    border: none;
+    border-radius: 12%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.btn:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+
+
+
+
+.snowflake {
+    position: fixed;
+    top: -10px;
+    color: white;
+    font-size: 1em;
+    animation: fall linear infinite, sway infinite ease-in-out;
+  }
+
+  /* Animación de caída */
+  @keyframes fall {
+    0% {
+      top: -10px;
+    }
+    100% {
+      top: 100vh;
+    }
+  }
+
+  /* Animación de movimiento lateral */
+  @keyframes sway {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(20px);
+    }
+  }
+
